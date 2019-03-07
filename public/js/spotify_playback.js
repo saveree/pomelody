@@ -63,8 +63,22 @@ window.onSpotifyPlayerAPIReady = () => {
   player.connect();
 }
 
+
+//Turn playlist url into playlist URI
+function url_to_uri(url){
+  url = url[24:];
+  url = url.split('?')[0];
+  url = url.replace("/",":");
+  uri = "spotify:" + url;
+  return uri
+}
+
+
+
+
 // Play a specified track on the Web Playback SDK's device ID
-function play(device_id) {
+function play(device_id, url) {
+  var uri = url_to_uri(url);
   $.ajax({
    url: "https://api.spotify.com/v1/me/player/play?device_id=" + device_id,
    type: "PUT",
