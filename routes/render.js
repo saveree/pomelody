@@ -92,8 +92,9 @@ exports.getSpotifyToken = async function(request, response) {
 	var body = {
 		grant_type: "authorization_code",
 		code: code,
-		redirect_uri: "https://pomelody.herokuapp.com/spotifyLogin"
-		//redirect_uri: "http://localhost:3000/spotifyLogin"
+		// redirect_uri: "https://pomelody.herokuapp.com/spotifyLogin"
+		// redirect_uri: "http://localhost:3000/spotifyLogin"
+		redirect_uri: "https://a10-pomelody.herokuapp.com/spotifyLogin"
 
 	}
 	paramed_body = param(body);
