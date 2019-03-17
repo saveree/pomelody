@@ -158,6 +158,8 @@ h4 {
 } */
 .alignleft {
 	float: left;
+	justify-content: center;
+
 }
 .alignright {
 	float: right;
