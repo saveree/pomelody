@@ -18,6 +18,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <!-- Loading Flat UI Pro -->
         <link href="dist/css/flat-ui.css" rel="stylesheet">
+        <!-- Emojis -->
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
         <!-- Google Analytics -->
         <script>
@@ -42,17 +44,20 @@
         </audio>
 
 
-        <h1 class="header" id="status"> Treat Yourself! </h1>
+        <h1 class="header" id="status">
+          Treat Yourself!
+          <i class="em em-relieved"></i>
+        </h1>
 
         <div class="center-container" id="main-content">
             <h2> Relaxation Mode </h2>
             <h3 id="countdown">  </h3>
 
-            <button type="button"  class="control_button btn btn-info" id="pause"> Pause </button>
+            <button type="button"  class="control_button btn btn-primary" id="pause"> Pause </button>
 
-            <button type="button" class="control_button btn btn-info" id="resume"> Resume </button>
+            <button type="button" class="control_button btn btn-primary" id="resume"> Resume </button>
 
-            <button onclick="skip_function()" class='control_button btn btn-info'>Skip</button>
+            <button onclick="skip_function()" class='control_button btn btn-primary'>Skip</button>
 
 
          <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWMOmoXKqHTD" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -67,7 +72,7 @@
             }
             </script>
 
-            <button onclick="stop_function()" class="btn btn-info control_button">Stop</button>
+            <button onclick="stop_function()" class="btn btn-primary control_button">Stop</button>
 
             <p id="demo"></p>
 

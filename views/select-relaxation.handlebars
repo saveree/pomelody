@@ -21,6 +21,8 @@
         <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
         <!-- Flat UI -->
         <link href="css/flat-ui.css" rel="stylesheet">
+        <!-- Emojis -->
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
         <!-- Google Analytics -->
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -41,7 +43,10 @@
 
         <a class="alignleft" href="select-productivity"> <ion-icon name="arrow-round-back"></ion-icon>  </a>
 
-        <h1>Select Relaxation Settings</h1>
+        <h1 style="padding-bottom:20px">
+          <i class="em em-relieved"></i> <br>
+          Select Relaxation Settings
+        </h1>
         <a class="alignright" href="#" onclick="genJSON()" data-toggle="tooltip" data-placement="bottom" title="Start"> <ion-icon name="exit"></ion-icon>  </a>
         <!-- <div class="alignright"> <button type="button" class="btn btn-primary" onclick="genJSON()"> Start </button> -->
         </div>
@@ -49,7 +54,7 @@
 
         <div class="center-container" id="main-content">
             <div>
-              <p id="info"> These will be the settings for when you're trying to focus and do work! Pick settings that you think will best help you focus! </p>
+              <p id="info"> These will be the settings for when you're <b> taking a break!</b>! Pick settings that you think will best help you <b>relax!</b> </p>
                 <h4> Select Playlist URL: </h4>
                 <p id="info"> This is music that will be playing in the background when you are relaxing. </p>
 

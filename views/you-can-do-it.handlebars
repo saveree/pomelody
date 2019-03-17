@@ -17,6 +17,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <!-- Loading Flat UI Pro -->
         <link href="dist/css/flat-ui.css" rel="stylesheet">
+        <!-- Emojis -->
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
         <!-- Google Analytics -->
         <script>
@@ -37,21 +39,23 @@
           <source src="sounds/success-sound.mp3" type="audio/mpeg">
         </audio>
 
-        <h1 class="header" id="status"> You Can Do It! </h1>
+        <h1 class="header" id="status"> You Can Do It!
+          <i class="em em-fist"></i>
+        </h1>
 
 
         <div class="center-container" id="main-content">
-            <h2> Productivity Mode </h2>
+            <h4w> You are currently in Productivity Mode </h4>
 
 
             <h3 id="countdown"> </h3>
 
-            <button type="button" class="control_button btn btn-info" id="pause"> Pause </button>
+            <button type="button" class="control_button btn btn-primary" id="pause"> Pause </button>
 
-            <button type="button" class="control_button btn btn-info" id="resume"> Resume </button>
+            <button type="button" class="control_button btn btn-primary" id="resume"> Resume </button>
 
-            <button onclick="skip_function()" class="control_button btn btn-info">Skip</button>
-            <button onclick="stop_function()" class="control_button btn btn-info">Stop</button>
+            <button onclick="skip_function()" class="control_button btn btn-primary">Skip</button>
+            <button onclick="stop_function()" class="control_button btn btn-primary">Stop</button>
 
             <p id="demo"></p>
 

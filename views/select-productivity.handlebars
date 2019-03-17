@@ -24,6 +24,8 @@
         <link href="css/flat-ui.css" rel="stylesheet">
         <!-- Spotify webplayer -->
         <script src="https://sdk.scdn.co/spotify-player.js"></script>
+        <!-- Emojis -->
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -43,7 +45,9 @@
     <body>
       <div class= "header">
         <a class="alignleft" href="welcome"> <ion-icon name="arrow-round-back"></ion-icon>  </a>
-        <h1 id> Select Productivity Settings</h1>
+        <h1 style="padding-bottom:20px"> <i class="em em-fist" style="margin-top:-30px"></i> <br>
+          Select Productivity Settings
+        </h1>
         <a class="alignright" href="select-relaxation"> <ion-icon name="arrow-round-forward"></ion-icon>  </a>
       </div>
 
@@ -53,7 +57,7 @@
 
         <div class="center-container" id="main-content">
             <div></ion-icon>
-              <p id="info"> These will be the settings for when you're trying to focus and do work! Pick settings that you think will best help you focus! </p>
+              <p id="info"> These will be the settings for when you're trying to <b> focus</b> and do work! Pick settings that you think will best help you <b>focus!</b> </p>
                 <h4> Select Playlist URL: </h4>
                 <p id="info"> This is music that will be playing in the background when you are working. </p>
                 <form id="productivity-form">
