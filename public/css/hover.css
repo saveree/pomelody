@@ -2617,7 +2617,7 @@
   border-width: 0 10px 10px 10px;
   border-color: transparent transparent #e1e1e1 transparent;
 }
-.hvr-bubble-top:hover:before, .hvr-bubble-top:focus:before, .hvr-bubble-top:active:before {
+.hvr-bubble-top, .hvr-bubble-top:hover:before, .hvr-bubble-top:focus:before, .hvr-bubble-top:active:before {
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
 }

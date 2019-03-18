@@ -59,14 +59,14 @@
 
             <button onclick="skip_function()" class='control_button btn btn-primary'>Skip</button>
 
-            <button onclick="stop_function()" class="btn btn-primary control_button">Stop</button>
+            <button onclick="stop_function()" class="btn btn-primary control_button">End</button>
 
          <!-- <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWMOmoXKqHTD" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
 
             <script>
             function skip_function() {
               var txt;
-              if (confirm("Are you sure you want to skip the session?")) {
+              if (confirm("Are you sure you want to stop relaxing and skip to the productivity session?")) {
                 txt = "You pressed OK!";
                 window.location.href = "you-can-do-it";
               }
@@ -79,7 +79,7 @@
             <script>
             function stop_function() {
 
-              if (confirm("Are you sure you want to stop the session?")) {
+              if (confirm("Are you sure you want to quit this Pomelody session?")) {
                 window.location.href = "end";
               }
             }

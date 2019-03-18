@@ -55,7 +55,7 @@
             <button type="button" class="control_button btn btn-primary" id="resume"> Resume </button>
 
             <button onclick="skip_function()" class="control_button btn btn-primary">Skip</button>
-            <button onclick="stop_function()" class="control_button btn btn-primary">Stop</button>
+            <button onclick="stop_function()" class="control_button btn btn-primary">End</button>
 
             <p id="demo"></p>
 
@@ -64,7 +64,7 @@
             <script>
             function skip_function() {
               var txt;
-              if (confirm("Are you sure you want to skip the session?")) {
+              if (confirm("Are you sure you want to stop working and skip to the relaxation session?")) {
                 txt = "You pressed OK!";
                 window.location.href = "treat-yourself";
               }
@@ -77,7 +77,7 @@
 
             <script>
             function stop_function() {
-              if (confirm("Are you sure you want to stop the session?")) {
+              if (confirm("Are you sure you want to quit this Pomelody session?")) {
                 window.location.href = "end";
               }
             }
